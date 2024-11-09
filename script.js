@@ -100,8 +100,8 @@ function renderSignal(technique, signal) {
     ctx.lineTo(x + stepSize, y);
   }
 
-  ctx.strokeStyle = '#000000';
-  ctx.lineWidth = 2;
+  ctx.strokeStyle = '#C3987D';
+  ctx.lineWidth = 3;
   ctx.stroke();
 
   const title = document.createElement('h3');
@@ -148,13 +148,13 @@ function renderSignal(technique, signal) {
     const x = i * stepSize;  
     const y = canvas.height / 2 - signal[i] * (canvas.height / 4);  
 
-    ctx.strokeStyle = '#000000'; 
+    ctx.strokeStyle = '#C3987D'; 
 
     ctx.lineTo(x, y);
     ctx.lineTo(x + stepSize, y);
   }
 
-  ctx.lineWidth = 2;
+  ctx.lineWidth = 3;
   ctx.stroke();
 
   signalsContainer.appendChild(signalWrapper);
