@@ -14,7 +14,7 @@ button {
   font-family: 'Teko', sans-serif;
   width: 55vw;
   padding: 10px;
-  font-size: 25px;
+  font-size: 40px;
   background-color: rgb(195, 152, 125);
   color: rgb(0, 0, 0);
   border: none;
@@ -30,11 +30,11 @@ button:hover {
 
 #signalsContainer {
   display: grid;
-  grid-template-columns: repeat(2
+  grid-template-columns: repeat(1
   , 1fr);
   gap: 25px;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .signal-wrapper {
@@ -48,7 +48,7 @@ button:hover {
 
 h3 {
     font-family: 'Teko', sans-serif;
-font-size: 20px;
+font-size: 25px;
   color: #C3987D;
   margin: 0;
   padding-bottom: 15px;
