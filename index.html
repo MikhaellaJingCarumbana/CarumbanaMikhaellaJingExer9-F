@@ -1,49 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Untitled</title>
+    <title>Digital Signal Encoder</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Teko&amp;display=swap">
     <link rel="stylesheet" href="assets/css/aos.min.css">
-    <link rel="stylesheet" href="assets/css/Features-Cards-icons.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
+<body style="background: rgb(28,45,53); color: rgb(28,45,53); margin: 0; padding: 0;">
+    <!-- Title Section -->
+    <div style="height: 30px;"></div>
+    <h1 data-aos="fade-up" style="text-align: center; color: rgb(255,255,255); font-family: 'Bebas Neue', serif; font-size: 57px;">DIGITAL SIGNAL ENCODING TECHNIQUES</h1>
+    <div style="height: 36px;"></div>
 
-<body style="background: rgb(28,45,53);color: rgb(28,45,53);">
-    <div class="container">
-        <div style="height: 30px;"></div>
-        <h1 data-aos="fade-up" style="text-align: center;color: rgb(255,255,255);font-family: 'Bebas Neue', serif;font-size: 57px;">DIGITAL SIGNAL ENCODING TECHNIQUES</h1>
-        <div style="height: 36px;"></div>
-    </div>
+    <!-- Main Card Section -->
     <section>
-        <div class="container text-center d-flex d-sm-flex d-md-flex d-lg-flex d-xxl-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xxl-center align-items-xxl-center" data-aos="fade-up" style="background: rgba(0,0,0,0);border-radius: 5px;text-align: center;">
-            <div class="card" style="background: rgb(19,34,41);width: 85vw;">
+        <div class="container text-center d-flex justify-content-center align-items-center" data-aos="fade-up" style="background: transparent; border-radius: 5px; text-align: center;">
+            <div class="card" style="background: rgb(19,34,41); width: 85vw;">
                 <div class="card-body">
                     <div style="height: 22px;"></div>
-                    <h1 class="text-center" data-aos="fade-up" style="font-size: 40px;font-family: 'Bebas Neue', serif;color: rgb(195,152,125);height: 33px;">SIGNAL ENCODER</h1>
-                    <div class="input-container" style="height: 10px;"></div><input type="text" data-aos="fade" id="binaryInput" style="background: rgb(28,45,53);border-style: none;border-radius: 5px;height: 30px;width: 55vw;text-align: center;color: rgb(255,255,255);" placeholder="Binary Signal (e.g. 10101010)">
-                    <div style="height: 13px;">
-                    </div><input type="radio" data-aos="fade-up" style="--bs-primary: #3d3d3d;--bs-primary-rgb: 61,61,61;" id="startHigh" name="startLevel" value="high" checked>
-                    <label class="form-label" data-aos="fade-up" style="font-family: Teko, sans-serif;color: rgb(195,152,125);font-size: 25px;">&nbsp;Start High&nbsp;&nbsp;</label>
+                    <h1 class="text-center" data-aos="fade-up" style="font-size: 40px; font-family: 'Bebas Neue', serif; color: rgb(195,152,125); height: 33px;">SIGNAL ENCODER</h1>
+                    <div class="input-container" style="height: 10px;"></div>
+                    <input type="text" data-aos="fade" id="binaryInput" style="background: rgb(28,45,53); border-style: none; border-radius: 5px; height: 30px; width: 55vw; text-align: center; color: rgb(255,255,255);" placeholder="Binary Signal (e.g. 10101010)">
+                    <div style="height: 13px;"></div>
+                    <input type="radio" data-aos="fade-up" id="startHigh" name="startLevel" value="high" checked>
+                    <label class="form-label" data-aos="fade-up" style="font-family: Teko, sans-serif; color: rgb(195,152,125); font-size: 25px;">&nbsp;Start High&nbsp;&nbsp;</label>
                     <input type="radio" data-aos="fade-up" id="startLow" name="startLevel" value="low">
-                    <label class="form-label" data-aos="fade-up" style="font-family: Teko, sans-serif;color: rgb(195,152,125);font-size: 25px;">&nbsp;Start Low</label>
+                    <label class="form-label" data-aos="fade-up" style="font-family: Teko, sans-serif; color: rgb(195,152,125); font-size: 25px;">&nbsp;Start Low</label>
                     <div style="height: 17px;"></div>
-                    <button class="btn btn-primary" data-aos="fade-up" type="button" id="encodeButton" style="width: 55VW;background: rgb(195,152,125);font-family: Teko, sans-serif;font-size: 25PX;border-style: none;color: rgb(0,0,0);">ENCODE</button>
+                    <button class="btn btn-primary" data-aos="fade-up" type="button" id="encodeButton" style="width: 55vw; background: rgb(195,152,125); font-family: Teko, sans-serif; font-size: 25px; border-style: none; color: rgb(0,0,0);">ENCODE</button>
                     <div style="height: 10px;"></div>
-                    <button class="btn btn-primary" data-aos="fade-up" type="button" id="generateButton" style="width: 55VW;background: rgb(195,152,125);font-size: 25PX;font-family: Teko, sans-serif;border-style: none;color: rgb(0,0,0);">GENERATE RANDOM BINARY</button>
-                    <div style="height: 48px;" ></div>
+                    <button class="btn btn-primary" data-aos="fade-up" type="button" id="generateButton" style="width: 55vw; background: rgb(195,152,125); font-size: 25px; font-family: Teko, sans-serif; border-style: none; color: rgb(0,0,0);">GENERATE RANDOM BINARY</button>
+                    <div style="height: 48px;"></div>
                     <div id="signalsContainer"></div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Scripts -->
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/aos.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="script.js"></script>
 </body>
-
 </html>
